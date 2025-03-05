@@ -1,0 +1,36 @@
+.plans-title {
+  text-align: center;
+  font-family: sans-serif;
+}
+.plans-bio {
+  text-align: center;
+  font-family: sans-serif;
+}
+.plans-container {
+  /* border: 1px solid black; */
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 1rem;
+}
+.plan {
+  border: 1px solid red;
+  min-width: 400px;
+  min-height: 400px;
+  width: 46%;
+  padding: 1rem;
+}
+.plan-recommended {
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 33%;
+}
+.plan-premium {
+  position: relative;
+}

@@ -1,36 +1,170 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+.main-ul {
+  display: flex;
+  gap: 25px;
+  padding-right: 800px;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.enter-btn {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid rgba(23, 83, 138, 1);
+  color: rgba(23, 83, 138, 1);
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+.log-btn {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  border: none;
+}
+.sign {
+  padding: 10px 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: rgba(23, 83, 138, 1);
+  color: #fff;
+}
+
+
+
+.plan-a a {
+  background-color: rgb(251, 248, 248);
+  padding: 7px;
+  border-radius: 7px;
+  color: rgb(96, 138, 245);
+}
 .plans-title {
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 400;
 }
 .plans-bio {
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 .plans-container {
-  /* border: 1px solid black; */
   display: flex;
   max-width: 800px;
   margin: 0 auto;
   justify-content: space-between;
-  gap: 30px;
+  gap: 35px;
   padding: 1rem;
 }
 .plan {
-  border: 1px solid red;
+  border: 1.6px solid black;
   min-width: 400px;
-  min-height: 400px;
+  min-height: 500px;
   width: 46%;
   padding: 1rem;
 }
 .plan-recommended {
-  background-color: blue;
+  background-color: rgba(0, 74, 173, 1);
   color: white;
-  padding: 8px;
+  padding: 5px;
   border-radius: 5px;
   position: absolute;
   top: 0;
-  left: 33%;
+  left: 36.9%;
 }
 .plan-premium {
   position: relative;
+  border-radius: 8px;
+  text-align: center;
+}
+.plan-basic {
+  border-radius: 8px;
+  text-align: center;
+
+}
+.star {
+  padding: 15px 70px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  box-shadow: 2px 10px 0px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.star:hover {
+  background-color: rgb(213, 213, 213);
+  box-shadow: 2px 10px 0px 0px black;
+}
+.make {
+  background-color: rgba(0, 74, 173, 1);
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  box-shadow: 2px 10px 0px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.correct {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 10px;
+}
+@media (max-width: 600px) {
+  .nav {
+    justify-content: center;
+  }
+  .main-ul {
+    padding-right: 0px;
+  }
+  .plans-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buttons {
+    display: none;
+  }
+  .plan {
+    border: 1.6px solid black;
+    min-width: 350px;
+    min-height: 500px;
+    width: 46%;
+    padding: 1rem;
+  }
 }
